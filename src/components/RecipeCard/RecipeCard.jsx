@@ -10,7 +10,7 @@ const RecipeCard = ({recipe, handleWantToCook}) => {
                 <figure>
                     <img
                     src={recipe_image}
-                    alt={recipe_image}
+                    alt={recipe_name}
                     className="h-52 w-full object-cover"
                     />
                 </figure>

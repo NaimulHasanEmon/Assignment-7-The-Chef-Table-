@@ -1,4 +1,4 @@
-import Chef from '../../assets/Images/Chef Photo.jpg';
+import Chef from '../../../public/assets/Images/Chef Photo.jpg';
 
 const Banner = () => {
     return (
