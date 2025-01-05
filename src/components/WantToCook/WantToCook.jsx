@@ -11,23 +11,23 @@ const WantToCook = ({wtc}) => {
                         <hr />
                         <div className="overflow-x-auto">
                             <table className="table">
-                                {/* head */}
                                 <thead>
                                     <tr>
                                         <th></th>
-                                        <th>Name</th>
-                                        <th>Time</th>
-                                        <th>Calories</th>
+                                        <th className='p-1'>Name</th>
+                                        <th className='p-1'>Time</th>
+                                        <th className='p-1'>Calories</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {
                                         wtc.map((item, idx) => (
                                             <tr key={idx}>
-                                                <td>{idx + 1}</td>
-                                                <td>{item.recipe_name}</td>
-                                                <td>{item.preparing_time}</td>
-                                                <td>{item.calories}</td>
+                                                <td className='p-1'>{idx + 1}</td>
+                                                <td className='p-1'>{item.recipe_name}</td>
+                                                <td className='p-1'>{item.preparing_time}</td>
+                                                <td className='p-1'>{item.calories}</td>
+                                                <button className='btn bg-green-500'>Preparing</button>
                                             </tr>
                                         ))
                                     }

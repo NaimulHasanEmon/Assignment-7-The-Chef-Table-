@@ -38,7 +38,8 @@ const Recipes = () => {
 
                 {/* Want to cook */}
                 <div className="w-1/3 text-start">
-                    <WantToCook                             key={wtc.recipe_id}
+                    <WantToCook
+                        key={wtc.recipe_id}
                         wtc={wtc}
                     ></WantToCook>
                 </div>
