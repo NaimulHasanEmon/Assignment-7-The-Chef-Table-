@@ -9,9 +9,9 @@ const RecipeCard = ({recipe, handleWantToCook}) => {
             <div className="card card-compact bg-base-100 h-full w-full shadow-xl justify-center items-center">
                 <figure>
                     <img
-                    src={recipe_image}
-                    alt={recipe_name}
-                    className="h-52 w-full object-cover"
+                        src={recipe_image}
+                        alt={recipe_name}
+                        className="h-52 w-full object-cover"
                     />
                 </figure>
                 <div className="card-body">
@@ -33,13 +33,13 @@ const RecipeCard = ({recipe, handleWantToCook}) => {
                         <div className="flex gap-1 items-center">
                             <FiClock />
                             <p>
-                                {preparing_time}
+                                {preparing_time} minutes
                             </p>
                         </div>
                         <div className="flex gap-1 items-center">
                             <FaFire />
                             <p>
-                                {calories}
+                                {calories} calories
                             </p>
                         </div>
                     </div>

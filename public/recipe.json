@@ -5,8 +5,8 @@
         "recipe_name": "Grilled Chicken Salad",
         "short_description": "A healthy grilled chicken salad with a refreshing vinaigrette.",
         "ingredients": ["200 g chicken breast", "50 g lettuce", "30 ml olive oil", "10 g parmesan cheese"],
-        "preparing_time": "20 min",
-        "calories": "300 calories"
+        "preparing_time": "20",
+        "calories": "300"
     },
     {
         "recipe_id": 2,
@@ -14,8 +14,8 @@
         "recipe_name": "Spaghetti Bolognese",
         "short_description": "Classic Italian pasta dish with rich meat sauce.",
         "ingredients": ["250 g spaghetti", "150 g ground beef", "100 g tomato sauce", "50 g onion"],
-        "preparing_time": "30 min",
-        "calories": "450 calories"
+        "preparing_time": "30",
+        "calories": "450"
     },
     {
         "recipe_id": 3,
@@ -23,8 +23,8 @@
         "recipe_name": "Vegetable Stir Fry",
         "short_description": "Quick and easy vegetable stir fry with soy sauce.",
         "ingredients": ["150 g broccoli", "100 g bell peppers", "30 ml soy sauce", "10 g garlic"],
-        "preparing_time": "15 min",
-        "calories": "250 calories"
+        "preparing_time": "15",
+        "calories": "250"
     },
     {
         "recipe_id": 4,
@@ -32,8 +32,8 @@
         "recipe_name": "Lemon Herb Fish",
         "short_description": "Fresh fish fillet grilled with lemon and herbs.",
         "ingredients": ["200 g fish fillet", "20 ml lemon juice", "10 g thyme", "10 g parsley"],
-        "preparing_time": "25 min",
-        "calories": "280 calories"
+        "preparing_time": "25",
+        "calories": "280"
     },
     {
         "recipe_id": 5,
@@ -41,8 +41,8 @@
         "recipe_name": "Chocolate Cake",
         "short_description": "Rich and moist chocolate cake with a creamy frosting.",
         "ingredients": ["200 g flour", "150 g sugar", "50 g cocoa powder", "100 ml milk"],
-        "preparing_time": "45 min",
-        "calories": "500 calories"
+        "preparing_time": "45",
+        "calories": "500"
     },
     {
         "recipe_id": 6,
@@ -50,7 +50,7 @@
         "recipe_name": "Caesar Salad",
         "short_description": "Classic Caesar salad with crunchy croutons and creamy dressing.",
         "ingredients": ["100 g romaine lettuce", "30 g croutons", "20 g parmesan cheese", "50 ml Caesar dressing"],
-        "preparing_time": "10 min",
-        "calories": "200 calories"
+        "preparing_time": "10",
+        "calories": "200"
     }
 ]

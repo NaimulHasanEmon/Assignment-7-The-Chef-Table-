@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import RecipeCard from '../RecipeCard/RecipeCard'
 import WantToCook from '../WantToCook/WantToCook';
+import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
 
 const Recipes = () => {
     const[recipe, setRecipe] = useState([])
-
     const[wtc, setWtc] = useState([])
+    const[currently, setCurrently] = useState([])
 
     useEffect(() => {
         fetch('recipe.json')
@@ -18,6 +19,14 @@ const Recipes = () => {
         setWtc(newWantToCook)
     }
 
+    const handlePreparing = (recipe, id) => {
+        const newCurrent = [...currently, recipe]
+        setCurrently(newCurrent)
+
+        const remainingWtc = wtc.filter(item => item.recipe_id !== id)
+        setWtc(remainingWtc)
+    }
+
     return (
         <div className="text-center content-center mt-16">
             <p className="text-4xl font-bold">Our Recipes</p>
@@ -28,20 +37,25 @@ const Recipes = () => {
                 {
                     recipe.map((recipe, idx) => (
                         <RecipeCard
-                        key={idx}
-                        recipe={recipe}
-                        handleWantToCook={handleWantToCook}
+                            key={idx}
+                            recipe={recipe}
+                            handleWantToCook={handleWantToCook}
                         ></RecipeCard>
                     ))
                 }
                 </div>
 
-                {/* Want to cook */}
+                {/* Sidebar */}
                 <div className="w-1/3 text-start">
-                    <WantToCook
-                        key={wtc.recipe_id}
-                        wtc={wtc}
-                    ></WantToCook>
+                    <div>
+                        <WantToCook
+                            wtc={wtc}
+                            handlePreparing={handlePreparing}
+                        ></WantToCook>
+                        <CurrentlyCooking
+                            currently={currently}
+                        ></CurrentlyCooking>
+                    </div>
                 </div>
             </div>
         </div>
