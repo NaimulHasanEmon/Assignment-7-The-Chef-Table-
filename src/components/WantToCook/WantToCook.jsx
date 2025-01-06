@@ -19,12 +19,18 @@ const WantToCook = ({wtc, handlePreparing}) => {
                         <tbody>
                             {
                                 wtc.map((item, idx) => (
-                                    <tr key={idx}>
+                                    <tr key={idx} className="justify-center">
                                         <td className='p-1'>{idx + 1}</td>
                                         <td className='p-1'>{item.recipe_name}</td>
                                         <td className='p-1'>{item.preparing_time} minutes</td>
-                                        <td className='p-1'>{item.calories} calories</td>
-                                        <button onClick={() => handlePreparing(item, item.recipe_id, item.preparing_time, item.calories)} className='btn bg-green-500'>Preparing</button>
+                                        <td className='p-1'>{item.
+                                        calories} calories</td>
+
+                                        {/* Preparing button */}
+                                        <td>
+                                            <button
+                                            onClick={() => handlePreparing(item, item.recipe_id, item.preparing_time, item.calories)} className='bg-green-500 rounded-full h-7 w-20'>Preparing</button>
+                                        </td>
                                     </tr>
                                 ))
                             }

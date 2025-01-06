@@ -16,20 +16,20 @@ const RecipeCard = ({recipe, handleWantToCook}) => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">{recipe_name}</h2>
-                    <p className="text-start">{short_description}</p>
+                    <p className="text-start text-slate-500">{short_description}</p>
                     <hr />
                     <div className="text-start">
-                        <p className="text-xl font-semibold">Ingredients: {ingredients.length}</p>
+                        <p className="text-base font-semibold">Ingredients: {ingredients.length}</p>
                         <ul className="list-disc pl-5">
                             {
                                 ingredients.map(ing => {
-                                    return <li key={ing}>{ing}</li>;
+                                    return <li className="text-slate-500 text-[13px] mt-1" key={ing}>{ing}</li>;
                                 })
                             }
                         </ul>
                     </div>
                     <hr />
-                    <div className="flex justify-between">
+                    <div className="flex justify-between text-slate-500">
                         <div className="flex gap-1 items-center">
                             <FiClock />
                             <p>

@@ -28,12 +28,12 @@ const Recipes = () => {
     }
 
     return (
-        <div className="text-center content-center mt-16">
+        <div className="text-center content-center my-16">
             <p className="text-4xl font-bold">Our Recipes</p>
             <p className="text-xl font-medium mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi facilis, repellat obcaecati non quis voluptas nemo veritatis ipsam dolorum optio aspernatur quod doloremque incidunt, atque officiis nam suscipit dignissimos numquam.</p>
-            <div className="flex mt-10 gap-5">
+            <div className="md:flex lg:flex mt-10 gap-5">
                 {/* Recipe Card */}
-                <div className="w-2/3 grid grid-cols-2 gap-10 text-start">
+                <div className="md:w-3/5 lg:w2/3 grid md:grid-cols-2 lg:grid-cols-2  gap-5 md:gap-5 lg:gap-6 text-start">
                 {
                     recipe.map((recipe, idx) => (
                         <RecipeCard
@@ -46,15 +46,19 @@ const Recipes = () => {
                 </div>
 
                 {/* Sidebar */}
-                <div className="w-1/3 text-start">
-                    <div>
-                        <WantToCook
-                            wtc={wtc}
-                            handlePreparing={handlePreparing}
-                        ></WantToCook>
-                        <CurrentlyCooking
-                            currently={currently}
-                        ></CurrentlyCooking>
+                <div className="mt-5 md:mt-0 md:w-2/5 lg:w-2/5 lg:mt-0 text-start">
+                    <div className="card card-compact bg-base-100 w-full shadow-xl">
+                        <div className="card-body">
+                            <div className='card card-compact'>
+                                <WantToCook
+                                    wtc={wtc}
+                                    handlePreparing={handlePreparing}
+                                ></WantToCook>
+                                <CurrentlyCooking
+                                    currently={currently}
+                                ></CurrentlyCooking>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

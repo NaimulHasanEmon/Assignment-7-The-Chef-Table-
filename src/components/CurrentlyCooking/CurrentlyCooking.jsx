@@ -42,9 +42,8 @@ const CurrentlyCooking = ({currently}) => {
                                 <th></th>
                                 <th></th>
                                 <th></th>
-                                <th></th>
-                                <th>Total Time = <br />{totalTime} minutes</th>
-                                <th>Total Calories = <br />{totalCalories} calories</th>
+                                <th className="md:pl-10 lg:pl-10">Total Time =<br />{totalTime} minutes</th>
+                                <th>Total Calories =<br />{totalCalories} calories</th>
                             </tr>
                         </thead>
                     </table>
