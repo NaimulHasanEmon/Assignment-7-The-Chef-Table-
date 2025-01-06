@@ -10,19 +10,17 @@ const Navbar = () => {
                         <div role="button" className="btn btn-ghost lg:hidden">
                             <MdOutlineRestaurantMenu />
                         </div>
-                        <ul
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[20] mt-3 w-52 p-2 shadow"
-                        >
+                        <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[20] mt-3 w-52 p-2 shadow">
                             <li><a>Home</a></li>
                             <li>
                                 <a>Recipes</a>
-                                <ul className="p-2">
-                                <li><a>Grilled Chicken Salad</a></li>
-                                <li><a>Spaghetti Bolognese</a></li>
-                                <li><a>Vegetable Stir Fry</a></li>
-                                <li><a>Lemon Herb Fish</a></li>
-                                <li><a>Chocolate Cake</a></li>
-                                <li><a>Caesar Salad</a></li>
+                                <ul className="p-2 bg-slate-300">
+                                    <li><a>Grilled Chicken Salad</a></li>
+                                    <li><a>Spaghetti Bolognese</a></li>
+                                    <li><a>Vegetable Stir Fry</a></li>
+                                    <li><a>Lemon Herb Fish</a></li>
+                                    <li><a>Chocolate Cake</a></li>
+                                    <li><a>Caesar Salad</a></li>
                                 </ul>
                             </li>
                             <li><a>About</a></li>
