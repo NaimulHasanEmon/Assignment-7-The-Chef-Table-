@@ -10,7 +10,7 @@ const Navbar = () => {
                         <div role="button" className="btn btn-ghost lg:hidden">
                             <MdOutlineRestaurantMenu />
                         </div>
-                        <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[20] mt-3 w-52 p-2 shadow">
+                        <ul className="menu menu-sm dropdown-content bg-base-100 rounded-xl z-[20] mt-3 w-52 p-2 shadow">
                             <li><a>Home</a></li>
                             <li>
                                 <a>Recipes</a>
