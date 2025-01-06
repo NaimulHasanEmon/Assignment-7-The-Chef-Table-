@@ -30,7 +30,7 @@ const Recipes = () => {
     return (
         <div className="text-center content-center my-16">
             <p className="text-4xl font-bold">Our Recipes</p>
-            <p className="text-xl font-medium mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi facilis, repellat obcaecati non quis voluptas nemo veritatis ipsam dolorum optio aspernatur quod doloremque incidunt, atque officiis nam suscipit dignissimos numquam.</p>
+            <p className="text-xl font-medium mt-8">Explore our carefully curated selection of dishes, each crafted with the finest ingredients and authentic flavors. From healthy salads to indulgent desserts, our recipes are designed to delight every palate and make every meal memorable.</p>
             <div className="md:flex lg:flex mt-10 gap-5">
                 {/* Recipe Card */}
                 <div className="md:w-3/5 lg:w2/3 grid md:grid-cols-2 lg:grid-cols-2  gap-5 md:gap-5 lg:gap-6 text-start">
