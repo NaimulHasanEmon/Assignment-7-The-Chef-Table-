@@ -17,8 +17,12 @@ const Navbar = () => {
                             <li>
                                 <a>Recipes</a>
                                 <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                                <li><a>Grilled Chicken Salad</a></li>
+                                <li><a>Spaghetti Bolognese</a></li>
+                                <li><a>Vegetable Stir Fry</a></li>
+                                <li><a>Lemon Herb Fish</a></li>
+                                <li><a>Chocolate Cake</a></li>
+                                <li><a>Caesar Salad</a></li>
                                 </ul>
                             </li>
                             <li><a>About</a></li>
