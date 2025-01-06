@@ -12,11 +12,10 @@ const Banner = () => {
             {/* Contents */}
             <div className="relative text-center text-white px-6 sm:px-10 md:px-20 lg:px-32 xl:px-52">
                 <p className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
-                    Discover an exceptional cooking class tailored for you!
+                Discover exceptional flavors, crafted with authentic taste!
                 </p>
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg mt-4 sm:mt-6">
-                    Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database,
-                    and solve 500+ coding problems to become an exceptionally well world-class Programmer.
+                At <span className='text-orange-500 restaurant-title text-[20px]'>Recipe Calories</span>, we bring you a menu full of mouthwatering dishes made with the finest ingredients. Each recipe is carefully crafted to deliver authentic flavors, ensuring a unique dining experience every time you visit.
                 </p>
 
                 {/* Buttons */}
