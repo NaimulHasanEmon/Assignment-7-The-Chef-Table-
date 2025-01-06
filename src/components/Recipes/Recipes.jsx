@@ -23,7 +23,7 @@ const Recipes = () => {
             const newWantToCook = [...wtc, recipe];
             setWtc(newWantToCook);
         } else {
-            toast("This recipe is already in your Want to Cook list!");
+            toast("This recipe is already in your Want to Cook list!", {className: "text-black bg-orange-200"});
         }
     }
 
@@ -57,7 +57,7 @@ const Recipes = () => {
                 <div className="mt-5 md:mt-0 md:w-2/5 lg:w-2/5 lg:mt-0 text-start">
                     <div className="card card-compact bg-base-100 w-full shadow-xl">
                         <div className="card-body">
-                            <div className='card card-compact'>
+                            <div className='card card-compact gap-5'>
                                 <WantToCook
                                     wtc={wtc}
                                     handlePreparing={handlePreparing}

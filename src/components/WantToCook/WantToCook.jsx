@@ -5,7 +5,7 @@ const WantToCook = ({ wtc, handlePreparing }) => {
     return (
         <div>
             <div>                        
-                <p className="text-center text-2xl font-bold">Want to cook: {wtc.length}</p>
+                <p className="text-center text-2xl font-bold mb-3">Want to cook: {wtc.length}</p>
                 <hr />
                 <div className="overflow-hidden">
                     <table className="table">

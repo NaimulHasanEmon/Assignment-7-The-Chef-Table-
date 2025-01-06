@@ -6,7 +6,7 @@ const CurrentlyCooking = ({currently}) => {
 
     return (
         <div>                       
-            <p className="text-center text-2xl font-bold">Currently cooking: {currently.length}</p>
+            <p className="text-center text-2xl font-bold mb-3">Currently cooking: {currently.length}</p>
             <hr />
             <div className="overflow-hidden">
                 <table className="table">
