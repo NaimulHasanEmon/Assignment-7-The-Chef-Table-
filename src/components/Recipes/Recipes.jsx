@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import RecipeCard from '../RecipeCard/RecipeCard'
 import WantToCook from '../WantToCook/WantToCook';
 import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
+import { toast } from 'react-toastify';
 
 const Recipes = () => {
     const[recipe, setRecipe] = useState([])
@@ -15,8 +16,15 @@ const Recipes = () => {
     }, [])
 
     const handleWantToCook = recipe => {
-        const newWantToCook = [...wtc, recipe]
-        setWtc(newWantToCook)
+        // Check if recipe already exists in the WantToCook list
+        const exists = wtc.some(item => item.recipe_id === recipe.recipe_id);
+
+        if (!exists) {
+            const newWantToCook = [...wtc, recipe];
+            setWtc(newWantToCook);
+        } else {
+            toast("This recipe is already in your Want to Cook list!");
+        }
     }
 
     const handlePreparing = (recipe, id) => {

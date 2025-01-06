@@ -4,6 +4,7 @@ import { FaFire } from "react-icons/fa";
 
 const RecipeCard = ({recipe, handleWantToCook}) => {
     const {recipe_name, recipe_image, short_description, ingredients, preparing_time, calories} = recipe
+
     return (
         <div>
             <div className="card card-compact bg-base-100 h-full w-full shadow-xl justify-center items-center">

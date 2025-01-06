@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
+import { ToastContainer } from 'react-toastify';
 
-const WantToCook = ({wtc, handlePreparing}) => {
+const WantToCook = ({ wtc, handlePreparing }) => {
     return (
         <div>
             <div>                        
@@ -23,13 +24,15 @@ const WantToCook = ({wtc, handlePreparing}) => {
                                         <td className='p-1'>{idx + 1}</td>
                                         <td className='p-1'>{item.recipe_name}</td>
                                         <td className='p-1'>{item.preparing_time} minutes</td>
-                                        <td className='p-1'>{item.
-                                        calories} calories</td>
+                                        <td className='p-1'>{item.calories} calories</td>
 
                                         {/* Preparing button */}
                                         <td>
                                             <button
-                                            onClick={() => handlePreparing(item, item.recipe_id, item.preparing_time, item.calories)} className='bg-green-500 rounded-full h-7 w-20'>Preparing</button>
+                                                onClick={() => handlePreparing(item, item.recipe_id)} 
+                                                className='bg-green-500 rounded-full h-7 w-20'>
+                                                Preparing
+                                            </button>
                                         </td>
                                     </tr>
                                 ))
@@ -38,6 +41,7 @@ const WantToCook = ({wtc, handlePreparing}) => {
                     </table>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
