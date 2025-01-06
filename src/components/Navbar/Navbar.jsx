@@ -54,7 +54,7 @@ const Navbar = () => {
                             <input
                                 type="text"
                                 placeholder="Search"
-                                className="text-xs md:text-sm lg:text-sm input input-bordered h-7 w-[69px] md:h-8 md:w-auto lg:h-8 lg:w-24 rounded-3xl"
+                                className="text-xs md:text-sm lg:text-sm input input-bordered h-7 w-[75px] md:h-8 md:w-auto lg:h-8 lg:w-24 rounded-3xl"
                             />
                         </div>
                         <div>
