@@ -23,7 +23,7 @@ const Recipes = () => {
             const newWantToCook = [...wtc, recipe];
             setWtc(newWantToCook);
         } else {
-            toast("This recipe is already in your Want to Cook list!", {className: "text-black bg-orange-200"});
+            toast("This recipe is already in your Want to Cook list!", {className: "text-black bg-orange-200 text-base"});
         }
     }
 
